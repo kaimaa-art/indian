@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.student-detail-wrapper {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right, royalblue, #333);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.student-detail-form-box {
+    width: 30%;
+    background-image: linear-gradient(to right, #f2caca, #e4cbfb);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px hotpink;
+}
+
+.student-detail-form {
+    min-height: 50vh;
+    width: 100%;
+    padding: 20px;
+    word-break: break-all;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 20px;
+}
+
+.student-detail-student-img {
+    border-radius: 5px;
+}

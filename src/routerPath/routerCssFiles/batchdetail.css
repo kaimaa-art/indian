@@ -1,0 +1,93 @@
+ .batch-detail-text {
+    color: white;
+ }
+
+ table {
+    width: 100%;
+    border: 4px double black;
+    border-collapse: collapse;
+ }
+
+ th,
+ td {
+    border: 4px double black;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+ }
+
+ tbody,
+ thead {
+    background-image: linear-gradient(to right, #f2caca, #e4cbfb);
+ }
+
+ .batch-detail-table tr:hover {
+    cursor: pointer;
+    background: #333;
+    color: white;
+    transition: 0.3s;
+ }
+
+ .student-btn {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+ }
+
+ .detail {
+    background-color: green;
+ }
+
+ .edit {
+    background-color: black;
+ }
+
+ .delete {
+    background-color: red;
+ }
+
+ .batch {
+    margin-right: 30px;
+ }
+
+ .student-btn:hover {
+    cursor: pointer;
+ }
+
+ .batch-detail-no-students {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 10px;
+ }
+
+ .batch-detail-no-students button {
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 10px;
+    width: 60%;
+    background-image: linear-gradient(to right, #f2caca, #e4cbfb);
+    box-shadow: 5px 5px 10px hotpink;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ .batch-detail-no-students button:hover {
+    cursor: pointer;
+    background: #333;
+    color: white;
+    width: 65%;
+    font-size: 28px;
+ }
+
+ .batch-detail-student-img {
+    height: 15vh;
+    border-radius: 5px;
+ }

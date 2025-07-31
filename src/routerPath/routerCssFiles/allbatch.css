@@ -1,0 +1,82 @@
+.all-batch-wrapper {
+    width: 100%;
+    padding: 10px;
+    background-image: linear-gradient(to right, royalblue, #333);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
+
+}
+
+.all-batch-box {
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #f2caca, #e4cbfb);
+    box-shadow: 5px 5px 10px hotpink;
+    border-radius: 10px;
+}
+
+.all-batch-box h1 {
+    font-size: 25px;
+}
+
+.all-batch-box:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 10px white;
+    transition: 0.6;
+}
+
+.all-batch-box:active {
+    box-shadow: inset 1px 1px 5px black, inset -1px -1px 2px black;
+}
+
+.all-no-batch-loader {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.all-no-batch-data {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 10px;
+}
+
+.all-no-batch-data button {
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 10px;
+    width: 60%;
+    background-image: linear-gradient(to right, #f2caca, #e4cbfb);
+    box-shadow: 5px 5px 10px hotpink;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.all-no-batch-data button:hover {
+    cursor: pointer;
+    background: #333;
+    color: white;
+    width: 65%;
+    font-size: 28px;
+}
+
+.all-batch-batch-img {
+    height: 15vh;
+    border-radius: 5px;
+}
