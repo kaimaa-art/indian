@@ -15,7 +15,7 @@ const Login = () => {
         e.preventDefault();
         try {
             setLoading(true)
-            const loginData = await axios.post('http://www.localhost:5000/auth/login', {
+            const loginData = await axios.post('https://batch-students.onrender.com/auth/login', {
                 email: email,
                 password: password
             })

@@ -28,7 +28,7 @@ const Register = () => {
         formData.append('logo', logoImg)
         try {
             setLoading(true)
-            await axios.post('http://www.localhost:5000/auth/signup', formData
+            await axios.post('https://batch-students.onrender.com/auth/signup', formData
             )
             setLoading(false)
             navigate('/Login')

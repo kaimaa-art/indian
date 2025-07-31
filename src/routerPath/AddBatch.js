@@ -31,7 +31,7 @@ const AddBatch = () => {
         if (location.state == null) {
             try {
                 setLoading(true)
-                await axios.post('http://www.localhost:5000/batch/create-batch', formData, {
+                await axios.post('https://batch-students.onrender.com/batch/create-batch', formData, {
                     headers: {
                         Authorization: 'Bearer ' + localStorage.getItem('token')
                     }
@@ -48,7 +48,7 @@ const AddBatch = () => {
         else {
             try {
                 setLoading(true)
-                await axios.put('http://www.localhost:5000/batch/update-batch/' + location.state._id, formData, {
+                await axios.put('https://batch-students.onrender.com/batch/update-batch/' + location.state._id, formData, {
                     headers: {
                         Authorization: 'Bearer ' + localStorage.getItem('token')
                     }

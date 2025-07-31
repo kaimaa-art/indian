@@ -17,7 +17,7 @@ const AllBatch = () => {
     const getBatch = async () => {
         try {
             setLoading(true)
-            const getBatchData = await axios.get('http://www.localhost:5000/batch/get-all-batch', {
+            const getBatchData = await axios.get('https://batch-students.onrender.com/batch/get-all-batch', {
                 headers: {
                     Authorization: 'Bearer ' + localStorage.getItem('token')
                 }

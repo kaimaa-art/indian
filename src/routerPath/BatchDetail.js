@@ -20,7 +20,7 @@ const BatchDetail = () => {
     const studentGetByBatchName = async () => {
         try {
             setLoading(true)
-            const batchStudentData = await axios.get('http://www.localhost:5000/contact/get-all-by-batch/' + location.state.batchName, {
+            const batchStudentData = await axios.get('https://batch-students.onrender.com/contact/get-all-by-batch/' + location.state.batchName, {
                 headers: {
                     Authorization: 'Bearer ' + localStorage.getItem('token')
                 }
@@ -38,7 +38,7 @@ const BatchDetail = () => {
         try {
             if (window.confirm('are you sure to delete this student')) {
                 setLoading(true)
-                await axios.delete('http://www.localhost:5000/contact/delete/' + id, {
+                await axios.delete('https://batch-students.onrender.com/contact/delete/' + id, {
                     headers: {
                         Authorization: 'Bearer ' + localStorage.getItem('token')
                     }
@@ -58,12 +58,12 @@ const BatchDetail = () => {
         try {
             if (window.confirm('are you sure to delete this batch')) {
                 setLoading(true)
-                await axios.delete('http://www.localhost:5000/batch/delete-batch/' + location.state._id, {
+                await axios.delete('https://batch-students.onrender.com/batch/delete-batch/' + location.state._id, {
                     headers: {
                         Authorization: 'Bearer ' + localStorage.getItem('token')
                     }
                 })
-                await axios.delete('http://www.localhost:5000/contact/delete-all-contact-by-batchName/' + location.state.batchName, {
+                await axios.delete('https://batch-students.onrender.com/contact/delete-all-contact-by-batchName/' + location.state.batchName, {
                     headers: {
                         Authorization: 'Bearer ' + localStorage.getItem('token')
                     }

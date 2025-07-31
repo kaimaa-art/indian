@@ -17,7 +17,7 @@ const AllContact = () => {
     const getAllStudent = async () => {
         try {
             setLoading(true)
-            const allStudentsData = await axios.get('http://localhost:5000/contact/get-all', {
+            const allStudentsData = await axios.get('https://batch-students.onrender.com/contact/get-all', {
                 headers: {
                     Authorization: 'Bearer ' + localStorage.getItem('token')
                 }
@@ -35,7 +35,7 @@ const AllContact = () => {
         try {
             if (window.confirm('are you sure to delete this student')) {
                 setLoading(true)
-                await axios.delete('http://www.localhost:5000/contact/delete/' + id, {
+                await axios.delete('https://batch-students.onrender.com/contact/delete/' + id, {
                     headers: {
                         Authorization: 'Bearer ' + localStorage.getItem('token')
                     }

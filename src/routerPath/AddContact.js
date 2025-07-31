@@ -19,7 +19,7 @@ const AddContact = () => {
 
     const getBatchData = async () => {
         try {
-            const batchData = await axios.get('http://www.localhost:5000/batch/get-all-batch', {
+            const batchData = await axios.get('https://batch-students.onrender.com/batch/get-all-batch', {
                 headers: {
                     Authorization: 'Bearer ' + localStorage.getItem('token')
                 }
@@ -46,7 +46,7 @@ const AddContact = () => {
 
         try {
             setLoading(true)
-            await axios.post('http://www.localhost:5000/contact/post', formData, {
+            await axios.post('https://batch-students.onrender.com/contact/post', formData, {
                 headers: {
                     Authorization: 'Bearer ' + localStorage.getItem('token')
                 }

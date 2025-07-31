@@ -14,7 +14,7 @@ const UpdateStudent = () => {
 
     const getBatchData = async () => {
         try {
-            const batchData = await axios.get('http://localhost:5000/batch/get-all-batch', {
+            const batchData = await axios.get('https://batch-students.onrender.com/batch/get-all-batch', {
                 headers: {
                     Authorization: 'Bearer ' + localStorage.getItem('token')
                 }
@@ -47,7 +47,7 @@ const UpdateStudent = () => {
 
         try {
             setLoading(true)
-            await axios.put('http://www.localhost:5000/contact/update/' + location.state._id, formData, {
+            await axios.put('https://batch-students.onrender.com/contact/update/' + location.state._id, formData, {
                 headers: {
                     Authorization: 'Bearer ' + localStorage.getItem('token')
                 }
