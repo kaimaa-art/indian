@@ -1,116 +1,6 @@
-// import React from 'react'
-
-// const Home = () => {
-//     return (
-//         <div>
-//             <h1>home</h1>
-//         </div>
-//     )
-// }
-
-// export default Home
-
-
-
-
-
-
-
-
-
-// import axios from "axios";
-// import { useEffect, useState } from "react";
-// import "./home.css";
-
-// const Home = () => {
-//     const userName =
-//         localStorage.getItem("userName") || "User";
-
-//     const [students, setStudents] = useState(0);
-//     const [batches, setBatches] = useState(0);
-
-//     useEffect(() => {
-//         getDashboardData();
-//     }, []);
-
-//     const getDashboardData = async () => {
-//     ...
-// };
-
-// return (
-//     <div className="home-container">
-
-//         <div className="welcome-card">
-//             <h1>Welcome Back, {userName} 👋</h1>
-//             <p>
-//                 Manage your students, batches and contacts
-//                 from one dashboard.
-//             </p>
-//         </div>
-
-//         <div className="stats-grid">
-
-//             <div className="stat-card">
-//                 <h3>Total Students</h3>
-//                 <h2>0</h2>
-//             </div>
-
-//             <div className="stat-card">
-//                 <h3>Total Batches</h3>
-//                 <h2>0</h2>
-//             </div>
-
-//             <div className="stat-card">
-//                 <h3>Total Contacts</h3>
-//                 <h2>0</h2>
-//             </div>
-
-//         </div>
-
-//         <div className="activity-card">
-//             <h2>Dashboard Overview</h2>
-
-//             <p>
-//                 Welcome to your Student Management System.
-//                 You can manage batches, students and
-//                 contacts from the sidebar.
-//             </p>
-//         </div>
-
-//     </div>
-// );
-// };
-
-// export default Home;
-
-
-
-
-
-
-import "./home.css";
+import "./routerCssFiles/home.css";
 import axios from "axios";
 import { useEffect, useState } from "react";
-// import {
-//     BarChart,
-//     Bar,
-//     XAxis,
-//     YAxis,
-//     Tooltip,
-//     CartesianGrid,
-//     PieChart,
-//     Pie,
-//     Cell,
-//     Legend,
-//     LineChart,
-//     Line,
-//     ResponsiveContainer,
-//     CartesianGrid,
-//     XAxis,
-//     YAxis,
-//     Tooltip
-// } from "recharts";
-
 import {
     BarChart,
     Bar,
@@ -211,22 +101,6 @@ const Home = () => {
                 }
             );
 
-            // const monthNames = [
-            //     "",
-            //     "Jan",
-            //     "Feb",
-            //     "Mar",
-            //     "Apr",
-            //     "May",
-            //     "Jun",
-            //     "Jul",
-            //     "Aug",
-            //     "Sep",
-            //     "Oct",
-            //     "Nov",
-            //     "Dec"
-            // ];
-
             const allMonths = [
                 { month: "Jan", students: 0 },
                 { month: "Feb", students: 0 },
@@ -262,10 +136,6 @@ const Home = () => {
                 }));
 
             setBatchChart(formattedData);
-            // console.log("Monthly API:", monthlyChart.data);
-            // console.log("Formatted:", formattedMonthly);
-
-            // console.log(dashboardData.data);
 
             setNewStudents(
                 dashboardData.data.newStudentsThisMonth
