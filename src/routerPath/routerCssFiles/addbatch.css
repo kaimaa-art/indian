@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -51,4 +51,115 @@
 .batch-btn {
     background: linear-gradient(to right, royalblue, #333);
     color: white;
+} */
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.batch-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.batch-form-box {
+    width: 100%;
+    max-width: 600px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.batch-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.batch-heading {
+    text-align: center;
+    color: #1e293b;
+}
+
+.batch-subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 10px;
+}
+
+.batch-input {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.batch-input:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+.batch-textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.batch-btn {
+    border: none;
+
+    padding: 14px;
+
+    border-radius: 12px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.batch-btn:hover {
+    background: #1d4ed8;
+}
+
+.batch-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+@media(max-width:768px) {
+
+    .batch-form-box {
+        padding: 25px;
+    }
+
 }

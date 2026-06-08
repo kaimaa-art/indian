@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -118,4 +118,400 @@
     background-image: linear-gradient(to right, #f2caca, #e4cbfb);
     color: black;
     border-radius: 10px;
+} */
+
+
+
+
+
+/* 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    background: #0f172a;
+}
+
+.fix-nav-bar {
+    width: 280px;
+    min-height: 100vh;
+
+    background: rgba(15, 23, 42, 0.95);
+
+    backdrop-filter: blur(12px);
+
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+
+    display: flex;
+    flex-direction: column;
+
+    position: sticky;
+    top: 0;
+}
+
+.mid-line {
+    display: none;
+}
+
+.dashboard-router-area {
+    flex: 1;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(circle at top left,
+            rgba(37, 99, 235, 0.15),
+            transparent 30%),
+        radial-gradient(circle at bottom right,
+            rgba(124, 58, 237, 0.15),
+            transparent 30%),
+        #0f172a;
+
+    overflow-y: auto;
+
+    padding: 25px;
+}
+
+.nav-headder {
+    padding: 25px 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav-logo {
+    width: 70px;
+    height: 70px;
+}
+
+.nav-logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 3px solid #3b82f6;
+}
+
+.nav-text {
+    flex: 1;
+}
+
+.nav-text p {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+.nav-text button {
+    border: none;
+
+    padding: 10px 16px;
+
+    border-radius: 10px;
+
+    background: linear-gradient(135deg,
+            #ef4444,
+            #dc2626);
+
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.nav-text button:hover {
+    transform: translateY(-2px);
+}
+
+.dashboard-links-parent {
+    padding: 20px 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dashboard-links {
+    text-decoration: none;
+
+    color: rgba(255, 255, 255, 0.8);
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 14px 18px;
+
+    border-radius: 14px;
+
+    transition: all 0.3s ease;
+
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.dashboard-links:hover {
+    background: rgba(59, 130, 246, 0.15);
+
+    color: white;
+
+    transform: translateX(5px);
+}
+
+.active {
+    background: linear-gradient(135deg,
+            #2563eb,
+            #7c3aed);
+
+    color: white !important;
+
+    box-shadow:
+        0 10px 25px rgba(59, 130, 246, 0.3);
+}
+
+@media (max-width: 900px) {
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .fix-nav-bar {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .dashboard-router-area {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .dashboard-links-parent {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .dashboard-links {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .nav-headder {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dashboard-links {
+        flex: 1 1 100%;
+    }
+} */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background: #f1f5f9;
+}
+
+/* Sidebar */
+
+.fix-nav-bar {
+    width: 280px;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #1e293b, #334155);
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.mid-line {
+    display: none;
+}
+
+/* Main Area */
+
+.dashboard-router-area {
+    flex: 1;
+    min-height: 100vh;
+    background: #f1f5f9;
+    overflow-y: auto;
+    padding: 25px;
+}
+
+/* Header */
+
+.nav-headder {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav-logo {
+    width: 65px;
+    height: 65px;
+}
+
+.nav-logo-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3b82f6;
+}
+
+/* User Info */
+
+.nav-text {
+    flex: 1;
+}
+
+.nav-text p {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.nav-text button {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    background: #ef4444;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-text button:hover {
+    background: #dc2626;
+    transform: translateY(-2px);
+}
+
+/* Navigation */
+
+.dashboard-links-parent {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.dashboard-links {
+    text-decoration: none;
+    color: #cbd5e1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.dashboard-links i {
+    font-size: 17px;
+}
+
+.dashboard-links:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    transform: translateX(5px);
+}
+
+.active {
+    background: linear-gradient(135deg,
+            #3b82f6,
+            #2563eb);
+
+    color: white !important;
+
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+}
+
+.active:hover {
+    color: white !important;
+}
+
+/* Scrollbar */
+
+.dashboard-router-area::-webkit-scrollbar {
+    width: 8px;
+}
+
+.dashboard-router-area::-webkit-scrollbar-thumb {
+    background: #94a3b8;
+    border-radius: 20px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .fix-nav-bar {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .dashboard-links-parent {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .dashboard-links {
+        flex: 1 1 45%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .nav-headder {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dashboard-links {
+        flex: 1 1 100%;
+    }
+
+    .dashboard-router-area {
+        padding: 15px;
+    }
+
 }

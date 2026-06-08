@@ -1,4 +1,4 @@
- .batch-detail-text {
+ /* .batch-detail-text {
     color: white;
  }
 
@@ -90,4 +90,138 @@
  .batch-detail-student-img {
     height: 15vh;
     border-radius: 5px;
+ } */
+
+
+
+
+
+
+ .batch-detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+ }
+
+ .batch-detail-text {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+ }
+
+ .batch-detail-text h1 {
+    color: #1e293b;
+    margin-bottom: 15px;
+ }
+
+ .batch-detail-text p {
+    color: #64748b;
+    margin-bottom: 10px;
+ }
+
+ .batch {
+    margin-right: 10px;
+ }
+
+ .student-btn {
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+ }
+
+ .student-btn:hover {
+    transform: translateY(-2px);
+ }
+
+ .detail {
+    background: #2563eb;
+ }
+
+ .edit {
+    background: #f59e0b;
+ }
+
+ .delete {
+    background: #ef4444;
+ }
+
+ .table-wrapper {
+    background: white;
+    border-radius: 18px;
+    overflow-x: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+ }
+
+ table {
+    width: 100%;
+    border-collapse: collapse;
+ }
+
+ thead {
+    background: #2563eb;
+    color: white;
+ }
+
+ th {
+    padding: 16px;
+ }
+
+ td {
+    padding: 16px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: center;
+ }
+
+ tbody tr:hover {
+    background: #f8fafc;
+ }
+
+ .batch-detail-student-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+ }
+
+ .batch-detail-no-students {
+    min-height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+ }
+
+ .batch-detail-no-students h1 {
+    color: #334155;
+ }
+
+ .batch-detail-no-students button {
+    border: none;
+    padding: 14px 24px;
+    border-radius: 12px;
+    background: #2563eb;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+ }
+
+ .batch-detail-no-students button:hover {
+    background: #1d4ed8;
+ }
+
+ @media(max-width:768px) {
+
+    table {
+       min-width: 900px;
+    }
+
  }
