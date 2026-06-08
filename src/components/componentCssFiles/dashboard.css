@@ -158,7 +158,7 @@
 
     .fix-nav-bar {
         width: 100%;
-        min-height: auto;
+        min-height: 30vh;
     }
 
     .dashboard-links-parent {
@@ -171,20 +171,3 @@
     }
 
 }
-/* 
-@media (max-width: 600px) {
-
-    .nav-headder {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .dashboard-links {
-        flex: 1 1 100%;
-    }
-
-    .dashboard-router-area {
-        padding: 15px;
-    }
-
-} */
